@@ -2,8 +2,8 @@
 
 int main() {
     // --- variantes para armazenar os dados das cartas ---
-    char estado1, estado2;           // sigla do estado
-    char codigo1[30], codigo2[30];   // codigo da carta
+    char estado1, estado2;           // sigla do estado (ex:'A','B')
+    char codigo1[30], codigo2[30];   // codigo da carta (ex: "A01","B01")
     char cidade1[30], cidade2[30];   // nome da cidade
     int populacao1, populacao2;      // populaçao total
     int NPT1, NPT2;                  // NPT = numero de pontos turisticos
