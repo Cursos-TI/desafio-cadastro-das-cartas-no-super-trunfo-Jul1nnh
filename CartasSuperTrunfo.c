@@ -27,12 +27,12 @@ int main() {
     printf("digite a area da cidade (carta 1): \n");
     scanf("%f", &area1);
 
-    DP1 = populacao1 / area1;   // calculo para saber a densidade populacional
-    PIBP1 = (PIB1 *1000000) / populacao1;  // calculo para saber o PIB per CAPITA
-    power1 = populacao1 + NPT1 + PIB1 + area1 + PIBP1 - DP1; // calculo para saber o poder
+    DP1 = (float)populacao1 / area1;   // calculo para saber a densidade populacional
+    PIBP1 = (PIB1 *1000000000) / populacao1;  // calculo para saber o PIB per CAPITA
+    power1 = (float)populacao1 + NPT1 + PIB1 + area1 + PIBP1 - DP1; // calculo para saber o poder
 
     // --- leitura dos dados da segunda carta ---
-    printf("digite a sigla do estado da carta 1 (ex:'A','B'): \n");
+    printf("digite a sigla do estado da carta 2 (ex:'A','B'): \n");
     scanf(" %c", &estado2);
     printf("digite o codigo da carta 2 (ex:'A01','B01'): \n");
     scanf("%s", codigo2);
@@ -47,9 +47,9 @@ int main() {
     printf("digite a area da cidade (carta 2): \n");
     scanf("%f", &area2);   
 
-    DP2 = populacao2 / area2;   // calculo para saber a densidade populacional
-    PIBP2 = (PIB2 * 1000000) / populacao2;  // calculo para saber o PIB per CAPITA
-    power2 = populacao2 + NPT2 + PIB2 + area2 + PIBP2 - DP2; // calculo para saber o poder
+    DP2 = (float)populacao2 / area2;   // calculo para saber a densidade populacional
+    PIBP2 = (PIB2 * 1000000000) / populacao2;  // calculo para saber o PIB per CAPITA
+    power2 = (float)populacao2 + NPT2 + PIB2 + area2 + PIBP2 - DP2; // calculo para saber o poder
 
     // --- exibiçao dos dados da primeira carta ---
     printf("\n--- CARTA 1 ---\n");
