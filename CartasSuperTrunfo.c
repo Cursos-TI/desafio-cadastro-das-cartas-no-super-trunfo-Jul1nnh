@@ -28,7 +28,7 @@ int main() {
     scanf("%f", &area1);
 
     DP1 = (float)populacao1 / area1;   // calculo para saber a densidade populacional
-    PIBP1 = (PIB1 *1000000000) / populacao1;  // calculo para saber o PIB per CAPITA
+    PIBP1 = (PIB1 * 1000000.0) / populacao1;  // calculo para saber o PIB per CAPITA
     power1 = (float)populacao1 + NPT1 + PIB1 + area1 + PIBP1 - DP1; // calculo para saber o poder
 
     // --- leitura dos dados da segunda carta ---
@@ -48,7 +48,7 @@ int main() {
     scanf("%f", &area2);   
 
     DP2 = (float)populacao2 / area2;   // calculo para saber a densidade populacional
-    PIBP2 = (PIB2 * 1000000000) / populacao2;  // calculo para saber o PIB per CAPITA
+    PIBP2 = (PIB2 * 1000000.0) / populacao2;  // calculo para saber o PIB per CAPITA
     power2 = (float)populacao2 + NPT2 + PIB2 + area2 + PIBP2 - DP2; // calculo para saber o poder
 
     // --- exibiçao dos dados da primeira carta ---
